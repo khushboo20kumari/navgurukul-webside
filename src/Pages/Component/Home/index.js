@@ -1,13 +1,12 @@
-import studentImg from "./assets/student.png";
-function Home() {
+import StudentImg from "./assets/student.png"
+function Bootstrap() {
     return (
         <>
             <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-1"></div>
-                    <div className="col-md-5 d-flex align-items-center justify-content-center">
-                        <div className="content-card d-flex align-items-end justify-content-end">
-                            <div className="card-body">
+                <div class="row">
+                    <div class="col-md-4 offset-md-1 d-flex justify-content-center align-items-center">
+                        <div class="" >
+                            <div class="card-body">
                                 <h2 className="heading-line">
                                     The <span className="text-primary">Gurukul</span> for the <br />
                                     <span className="bg-color" style={{ background: "#EB5F42", color: "white" }}>New Age India</span> and its <br></br>New Generation
@@ -18,13 +17,12 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex align-items-end">
-                        <img style={{ width: "100%", marginLeft: "10px" }} src={studentImg} className="img-fluid" alt="Student" />
+                    <div class="col-md-6 ms-md-auto">
+                        <img src={StudentImg} style={{ width: "100%" }}></img>
                     </div>
                 </div>
             </div>
         </>
     )
 }
-
-export default Home;
+export default Bootstrap;
