@@ -153,7 +153,7 @@ function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown mx-2 my-2">
                             <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('about')}>
-                                About <BiChevronDown style={{ marginLeft: "5px", fontSize: "30px", lineHeight: "27px", textAlign: "center" }} />
+                                <span style={{ fontSize: "18px", fontWeight: "700px" }}> About</span> <BiChevronDown style={{ marginLeft: "5px", fontSize: "18px", lineHeight: "27px", textAlign: "center" }} />
                             </a>
                             {showDropdown.about && (
                                 <div className="dropdown-menu show">
@@ -164,8 +164,8 @@ function Navbar() {
                             )}
                         </li>
                         <li className="nav-item dropdown mx-2 my-2">
-                            <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('schools')}>
-                                Schools <BiChevronDown style={{ marginLeft: "5px", fontSize: "30px" }} />
+                            <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('schools')} style={{ display: "flex" }}>
+                                <span style={{ fontSize: "18px", fontWeight: "700px" }}> Schools </span><BiChevronDown style={{ marginLeft: "5px", fontSize: "18px" }} />
                             </a>
                             {showDropdown.schools && (
                                 <div className="dropdown-menu show">
@@ -177,7 +177,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item dropdown mx-2 my-2">
                             <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('digitalInitiatives')}>
-                                Digital Initiatives <BiChevronDown style={{ marginLeft: "5px", fontSize: "30px" }} />
+                                <span style={{ fontSize: "18px", fontWeight: "700px" }}> Digital Initiatives </span><BiChevronDown style={{ marginLeft: "5px", fontSize: "18px" }} />
                             </a>
                             {showDropdown.digitalInitiatives && (
                                 <div className="dropdown-menu show">
@@ -189,7 +189,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item dropdown mx-2 my-2">
                             <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('getInvolved')}>
-                                Get Involved <BiChevronDown style={{ marginLeft: "5px", fontSize: "30px" }} />
+                                <span style={{ fontSize: "18px", fontWeight: "700px" }}>  Get Involved</span>  <BiChevronDown style={{ marginLeft: "5px", fontSize: "18px" }} />
                             </a>
                             {showDropdown.getInvolved && (
                                 <div className="dropdown-menu show">
@@ -203,7 +203,8 @@ function Navbar() {
                     <ul className="navbar-nav">
                         <button
                             type="button"
-                            className="btn btn-primary mx-2 my-2 "
+                            style={{fontSize:"18px",fontWeight:"700px"}}
+                            className="btn btn-primary mx-2 my-2  dashed-btn"
                             onClick={(e) => {
                                 e.preventDefault();
                                 window.open("/hiring", "_blank");
@@ -212,6 +213,7 @@ function Navbar() {
                             Hire from Us
                         </button>
                         <button
+                        style={{fontSize:"18px",fontWeight:"700px"}}
                             type="button"
                             className="btn btn-primary mx-2 my-2 dashed-btn"
                             onClick={(e) => {
@@ -222,7 +224,7 @@ function Navbar() {
                             CSR Enquiries
                         </button>
                         <button
-                            style={{ width: "135px" }}
+                            style={{ width: "135px",fontSize:"18px",fontWeight:"700px"}}
                             type="button"
                             className="btn regular-btn mx-2 my-2 donate-btn"
                             onClick={(e) => {

@@ -20,7 +20,7 @@ function FacilitiesatNavGurukul() {
                                         <div>
                                             <img src={verified} style={{ width: "24px" }}></img>
                                         </div>
-                                        <span className="tilte" style={{ marginLeft: "8px" }}>{item.title}</span>
+                                        <span className="tilte" style={{ marginLeft: "8px",fontSize:"18px",fontWeight:"700px" }}>{item.title}</span>
                                     </div>
                                 </div>
                             ))}

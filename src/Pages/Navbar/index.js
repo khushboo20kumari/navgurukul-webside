@@ -175,7 +175,6 @@
 
 
 import { useState } from 'react';
-// import navgurukulIcon from './Assets/navgurukul-icon.png';
 import { BiChevronDown } from "react-icons/bi";
 import navbarlogo from "./assets/Logo.png"
 function Navbar() {
@@ -206,7 +205,7 @@ function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item dropdown mx-2 my-2">
                             <a className="nav-link active" aria-current="page" href="#" onClick={() => handleDropdownClick('about')} style={{display:"flex"}}>
-                                <span>About</span> <BiChevronDown style={{ marginLeft: "5px", fontSize: "30px", lineHeight: "27px", textAlign: "center" }} />
+                                <p style={{fontWeight:"700px", marginLeft: "5px", fontSize: "300px", lineHeight: "27px", textAlign: "center" }}>About</p> <BiChevronDown style={{fontWeight:"700px", marginLeft: "5px", fontSize: "30px", lineHeight: "27px", textAlign: "center" }} />
                             </a>
                             {showDropdown.about && (
                                 <div className="dropdown-menu show">
