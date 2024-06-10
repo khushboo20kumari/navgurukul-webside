@@ -25,14 +25,7 @@ function App() {
       <AlumnusNavgurukul></AlumnusNavgurukul>
       <Footer></Footer>
 
-      <Navbar></Navbar>
-      <Home></Home>
-      <PlacementCom></PlacementCom>
-      <SchoolsPage></SchoolsPage>
-      <DigitalInitiatives></DigitalInitiatives>
-      <FacilitiesatNavGurukul></FacilitiesatNavGurukul>
-      <SocailMedia></SocailMedia>
-      <OurSupporters></OurSupporters>
+      
 
     </div>
   );
